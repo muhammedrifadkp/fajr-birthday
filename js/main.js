@@ -421,6 +421,11 @@
     gsap.fromTo('.circle-reveal', { clipPath: 'circle(12% at 50% 50%)' }, { clipPath: 'circle(75% at 50% 50%)', ease: 'none', scrollTrigger: circleSt });
     gsap.fromTo('.circle-reveal img', { scale: 1.4 }, { scale: 1, ease: 'none', scrollTrigger: { ...circleSt } });
 
+    // the two smaller photos drift at different speeds
+    const pairSt = { trigger: '.pair', start: 'top bottom', end: 'bottom top', scrub: true };
+    gsap.fromTo('.pair__item--port', { y: 50 }, { y: -50, ease: 'none', scrollTrigger: pairSt });
+    gsap.fromTo('.pair__item--land', { y: -20 }, { y: 40, ease: 'none', scrollTrigger: { ...pairSt } });
+
     // turning three — stacked cards settle back as the next arrives
     const cards = $$('.stack__card');
     cards.forEach((card, i) => {
