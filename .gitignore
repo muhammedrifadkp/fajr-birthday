@@ -1,0 +1,11 @@
+# Full-size original photos and song — the site uses the optimized copies in assets/
+images/
+Happy-Birthday-song.mp3
+
+# local tooling
+.claude/
+.vercel/
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
