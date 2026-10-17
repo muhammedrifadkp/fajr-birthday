@@ -1,0 +1,5 @@
+# Keep CLI / drag-and-drop deploys small: the site only needs index.html, css/, js/, assets/
+images/
+Happy-Birthday-song.mp3
+.claude/
+README.md
